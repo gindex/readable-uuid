@@ -19,6 +19,6 @@ function uuid() {
             local pos=$((i % size))
             pattern+=${1:$pos:1}
         done
-        echo "${pattern:0:8}-${pattern:0:4}-${pattern:0:4}-${pattern:0:4}-${pattern}"
+        echo -n "${pattern:0:8}-${pattern:0:4}-${pattern:0:4}-${pattern:0:4}-${pattern}"
     fi
 }
